@@ -6,105 +6,114 @@
     <meta name="description" content="Main page, containing a list with youtube channels">
     <meta name="author" content="Dimitrie Panainte">
     
-    <title>Youtube Channels List</title>
+    <title>
+      Youtube Channels List
+    </title>
     
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/moreStyle.css">
     
   </head>
   <body>
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header class="masthead">
-        <div class="inner">
-          <a class="nav-link" href="index.html">
-            <h3 class="masthead-brand">Dimitrie Panainte</h3>
-          </a>
-          <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link" href="index.html#aboutme">about me</a>
-            <a class="nav-link active" href="youtubeChannelsList.html#youtubeChannels">youtube channels</a>
-            <a class="nav-link" href="websitesList.html#websites">websites</a>
-          </nav>
-        </div>
-      </header>
-      
-      <main class="inner cover mb-auto">
-                
-        <div class="container-fluid" id="youtubeChannels">
-          
-          <div class="row">
-						<h4>YouTube channels that I find interesting:
-            </h4>
-          </div>
-					
-          <div class="row">
-						<p>Errichto 
-            </p>
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/M_BaOHkTtyY" allowfullscreen></iframe>
-            </div>
-          </div>
-					
-          <div class="row">
-						<p>Lex Fridman 
-            </p>
+    <nav class="navbar navbar-expand navbar-dark fixed-top bg-black">
+      <a class="navbar-brand" href="#">
+        Dimitrie Panainte
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              about me
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="youtubeChannelsList.html">
+              cool yt channels
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="websitesList.html">
+              websites
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>    
+    
+    <main class="container" id="youtubeChannels">
+      <div class="jumbotron">
+        <h4>
+          YouTube channels that I find interesting:
+        </h4>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <a href="https://www.youtube.com/embed/dEv99vxKjVI">
+              Lex Fridman
+            </a>
             <div class="embed-responsive embed-responsive-16by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dEv99vxKjVI" allowfullscreen></iframe>
             </div>
-          </div>
-					
-          <div class="row">
-						<p>Mr Carlson's Lab
-            </p>
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NoGl7oeh7eU" allowfullscreen></iframe>
-            </div>
-          </div>
-					
-          <div class="row">
-						<p>EEVblog 
-            </p>
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7FYHt5XviKc" allowfullscreen></iframe>
-            </div>
-          </div>
-					
-          <div class="row">
-						<p>3Blue1Brown 
-            </p>
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/aircAruvnKk" allowfullscreen></iframe>
-            </div>
-          </div>
-					
-          <div class="row">
-						<p>Applied Science 
-            </p>
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GuCdsyCWmt8" allowfullscreen></iframe>
-            </div>
-          </div>
-					
-          <div class="row">
-						<p>blackpenredpen
-            </p>
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wDCToFwOpfQ" allowfullscreen></iframe> 
-            </div>
-          </div>
-					
-        </div>       
-      
-      </main>
-      
-      <footer class="container-fluid">
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
-      </footer>
-      
-    </div>
+          </li>
+          <li class="list-group-item">
+            <a href="https://www.youtube.com/embed/M_BaOHkTtyY">
+              Errichto 
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a href="https://www.youtube.com/embed/NoGl7oeh7eU">
+              Mr Carlson's Lab 
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a href="https://www.youtube.com/embed/7FYHt5XviKc">
+              EEVblog 
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a href="https://www.youtube.com/embed/aircAruvnKk">
+              3Blue1Brown 
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a href="https://www.youtube.com/embed/GuCdsyCWmt8">
+              Applied Science 
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a href="https://www.youtube.com/embed/wDCToFwOpfQ">
+              blackpenredpen
+            </a>
+          </li>
+        </ul>
+        
+      </div>      
+    </main>
     
-    <script src="js/jquery-3.4.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <footer class="container">
+      <p class="float-right">
+        <a href="#">
+          Back to top
+        </a>
+      </p>
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+        <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
+      </a>
+      <br>
+      This work is licensed under a 
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+        Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License
+      </a>.
+    </footer>
+    
+    <script src="js/jquery-3.4.1.slim.min.js">
+    </script>
+    <script src="js/popper.min.js">
+    </script>
+    <script src="js/bootstrap.min.js">
+    </script>
   </body>
 </html>

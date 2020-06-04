@@ -6,79 +6,103 @@
     <meta name="description" content="Main page, containing about me and contact me sections">
     <meta name="author" content="Dimitrie Panainte">
     
-    <title>Dimitrie Panainte</title>
+    <title>
+      Dimitrie Panainte
+    </title>
     
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/moreStyle.css">
     
   </head>
   <body>
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header class="masthead">
-        <div class="inner">
-          <a class="nav-link" href="index.html">
-            <h3 class="masthead-brand">Dimitrie Panainte</h3>
-          </a>
-          <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="index.html#aboutme">about me</a>
-            <a class="nav-link" href="youtubeChannelsList.html#youtubeChannels">youtube channels</a>
-            <a class="nav-link" href="websitesList.html#websites">websites</a>
-          </nav>
-        </div>
-      </header>
-      
-      <main class="inner cover mb-auto">
-        <div class="container-fluid" id="aboutme">
-          <div class="row">  
-            <h4 class="cover-heading">About me:
-            </h4>
-          </div>
-          <div class="row">  
-            <div class="col-md-auto">
-              <img src="img/myphoto.png" class="rounded mx-auto d-block" id="myphoto" alt="My photo">
-            </div>
-            <div class="col">
-              <p>
-							Dimitrie Panainte holds an engineering degree in Computers and Information Technology from "Gheorghe Asachi" Technical University of Iaşi, Romania. <br>
-							Since high school he liked to participate in competitions. As a student, in 2018, his team won 3rd prize at NXP CUP EMEA FINALS. <br>
-							<a href="https://www.youtube.com/watch?v=uIR4u7kXjco&list=PL1xbox4kZP0N6x6O58rIWm6e5VqHs030d&index=6">Video of the competition.</a>
-							<br>
-							Since 2007, he has worked as a programmer for Continental Automotive Romania, which is a German multinational automotive parts manufacturing company for the automotive and transportation industries. 
-							<br>
-							Later, he continues to work for Infineon Technologies Romania where he designs and develops automated tests for Infineon Security & Smart Cards. 
-							<br>
-							Driven by curiosity and finding an opportunity, he travels to Osnabrück, Germany and he moves to Timisoara, Romania, where he works for Amazonen-Werke H. Dreyer GmbH & Co. KG  which is a German manufacturer of Agricultural machinery and municipal machinery.  
-							<br>
-							When not programming, Dimitrie enjoys skating, travelling, swimming and playing games. 
-							<br>
-            </p>
-            </div>
-						
-          </div>
-        </div>
-        
-        <div class="container-fluid" id="contact">
-          <div class="row">
-						<h4>Contact:
-            </h4>
-          </div>
-          <div class="row">  
-						<p>panainte dot dimitrie at gmail dot com<br>@dimitriedmr
-            </p>
-          </div>
-        </div> 
-      
-      </main>
-      
-      <footer class="container-fluid">
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
-      </footer>
-      
-    </div>
+    <nav class="navbar navbar-expand navbar-dark fixed-top bg-black">
+      <a class="navbar-brand" href="#">
+        Dimitrie Panainte
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">
+              about me
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="youtubeChannelsList.html">
+              cool yt channels
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="websitesList.html">
+              websites
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>    
     
-    <script src="js/jquery-3.4.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <main class="container" id="aboutme">
+      <div class="jumbotron">
+        <h4>
+          About me:
+        </h4>
+        <div class="row">
+          <img src="img/myphoto.png" class="col- rounded w-100 h-100 mx-auto" id="myphoto" alt="My photo">
+          <p class = "col- p-3 text-justify">
+            Dimitrie Panainte holds an engineering degree in Computers and Information Technology from "Gheorghe Asachi" Technical University of Iaşi, Romania. 
+            <br>
+            Since high school he liked to participate in competitions. As a student, in 2018, his team won 3rd prize at NXP CUP EMEA FINALS. 
+            <br>
+            <a href="https://www.youtube.com/watch?v=uIR4u7kXjco&list=PL1xbox4kZP0N6x6O58rIWm6e5VqHs030d&index=6">
+              Video of the competition. 
+            </a>
+            <br>
+            He started working as a programmer for Continental Automotive Romania, which is a German multinational automotive parts manufacturing company for the automotive and transportation industries. 
+            <br>
+            Later, he continues to work for Infineon Technologies Romania where he designs and develops automated tests for Infineon Security & Smart Cards. 
+            <br>
+            Driven by curiosity and finding an opportunity, he travels to Osnabrück, Germany and he moves to Timisoara, Romania, where he works for Amazonen-Werke H. Dreyer GmbH & Co. KG  which is a German manufacturer of Agricultural machinery and municipal machinery.  
+            <br>
+            When not programming, Dimitrie enjoys skating, travelling, swimming and playing games. 
+            <br>
+          </p>
+          
+        </div>
+        <h4>Contact:</h4>
+        <div class="row">
+          <p class = "col">
+            panainte dot dimitrie at gmail dot com
+            <br>
+            @dimitriedmr
+          </p>
+        </div>
+      </div>
+    </main>
+    
+    <footer class="container">
+      <p class="float-right">
+        <a href="#">
+          Back to top
+        </a>
+      </p>
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+        <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
+      </a>
+      <br>
+      This work is licensed under a 
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+        Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License
+      </a>.
+    </footer>
+    
+    <script src="js/jquery-3.4.1.slim.min.js">
+    </script>
+    <script src="js/popper.min.js">
+    </script>
+    <script src="js/bootstrap.min.js">
+    </script>
   </body>
 </html>
