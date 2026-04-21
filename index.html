@@ -10,9 +10,8 @@
       Dimitrie Panainte
     </title>
     
-    <!-- Clarity is prioritized over loading speed, therefore minimized files aren't used. -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> 
-    <link rel="stylesheet" type="text/css" href="css/moreStyle.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/navbar-fixed.css" rel="stylesheet" />
             
   </head>
   <body>
@@ -35,41 +34,21 @@
           <p>
             Thus, I utilize a Raspberry Pi as my personal computer and I use an Android smartphone.
           </p>
-
         </div>
         <h4>Contact:</h4>
         <div class="row">
           <p>
-            panainte dot dimitrie at gmail dot com
+            panainte DOT dimitrie -AT- gmail -DOT- com
           </p>
         </div>
       </div>
     </main>
-    
-    <footer class="container fixed-bottom bg-black">
-      <p class="float-right">
-        <a href="#">
-          Back to top
-        </a>
-      </p>
-      <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
-        <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
-      </a>
-      This work is licensed under a 
-      <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
-        Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License
-      </a>.
-    </footer>
-    
-    <script src="js/jquery-4.0.0.min.js">
-    </script>
-    <script src="js/popper-2.10.2.min.js">
-    </script>
-    <script src="js/externalNavbar.js">
-    </script>
-    <script src="js/bootstrap.js">
-    </script>
-    <!-- jquery, popper, bootstrap -->
-      
+
+    <div id="footer-placeholder">
+    </div>
+
+    <script src="js/external-parts-loader.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
   </body>
 </html>
