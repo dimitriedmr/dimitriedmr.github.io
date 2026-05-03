@@ -8,17 +8,11 @@ body {
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
 }
 
-a {
-  color: #fff;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #fff;
-  border-bottom: 2px solid #fff;
-  text-decoration: none;
-}
-
 .list-group-item {
   border: none;
+}
+
+a, a:hover {
+  color: #fff;
+  text-decoration: none;
 }
