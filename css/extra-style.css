@@ -1,0 +1,24 @@
+/* Show it is fixed to the top - from navbar example */
+body {
+  min-height: 75rem;
+  padding-top: 4.5rem;
+}
+
+/* Remove links blue color and other style changes */
+body {
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  text-decoration: none;
+}
+.jumbotron {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
