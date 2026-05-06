@@ -17,25 +17,31 @@
     </div>
 
     <main>
-      <div class="container py-4">
-
+      <div class="container py-4 text-center">
+        <img src="img/pcbruler.jpg" class="rounded img-fluid" alt="Mouser SMD ruler">
       </div>
 
       <div class="container py-4">
-
         <p>
-        <a class="btn" data-bs-toggle="collapse" href="#collapse-philips" aria-expanded="false" aria-controls="collapse-philips">Philips TVs</a>
-        <ul class="list-group collapse" id="collapse-philips">
-          <li class="list-group-item"><a href="https://toengel.net/philipsblog/firmware-download">Philips firmware dumps and chassis</a></li>
-          <li class="list-group-item"><a href="https://elektrotanya.com/philips_24pfs6805_32pfs6825_43pfs6805_6855_6905_6825_32phs6825_6605_chassis_tpm20.7ela_sm.pdf/download.html">TPM20.7ELA</a></li>
+        <a class="btn" data-bs-toggle="collapse" href="#collapse-flash" aria-expanded="false" aria-controls="collapse-flash">Flash, firmware, dumps</a>
+        <ul class="list-group collapse" id="collapse-flash">
+          <li class="list-group-item"><a href="https://github.com/bigbigmdm/IMSProg">IMSProg - 25C(SPI) and 24C(I2C) flash programmer</a></li>
+          <li class="list-group-item"><a href="https://www.youtube.com/watch?v=6ofPbclXuZQ">EMMC - 1 wire data mode</a></li>
+          <li class="list-group-item"><a href="https://vortex-tv.blogspot.com">Vortex firmware dumps</a></li>
+          <li class="list-group-item"><a href="https://firmware-tv.blogspot.com">TV firmware dumps</a></li>
+          <li class="list-group-item"><a href="https://pro-electronica.net/category/dump-uri-tv">Pro electronica - TV firmware dumps</a></li>
+          <li class="list-group-item">for comparison: dhex file1.bin file2.bin</li>
+          <li class="list-group-item">check: binwalk file1.bin</li>
+          <li class="list-group-item">for squashFS: 7z x file1.bin -o./contents</li>
+          <li class="list-group-item"><a href="https://github.com/NationalSecurityAgency/ghidra">SRE</a></li>
         </ul>
         </p>
 
         <p>
-        <a class="btn" data-bs-toggle="collapse" href="#collapse-psu" aria-expanded="false" aria-controls="collapse-psu">SAMUS caffe machine power supply</a>
-        <ul class="list-group collapse" id="collapse-psu">
-          <li class="list-group-item"><a href="https://www.elektroda.pl/rtvforum/topic4153323.html">lc-cm6862-p - PCB</a></li>
-          <li class="list-group-item"><a href="https://www.xinmisemi.com/product/kp3210b-2">KP3210B - PMIC PWM</a></li>
+        <a class="btn" data-bs-toggle="collapse" href="#collapse-philips" aria-expanded="false" aria-controls="collapse-philips">Philips TVs chassis</a>
+        <ul class="list-group collapse" id="collapse-philips">
+          <li class="list-group-item"><a href="https://toengel.net/philipsblog/firmware-download">Philips firmware dumps and chassis</a></li>
+          <li class="list-group-item"><a href="https://elektrotanya.com/philips_24pfs6805_32pfs6825_43pfs6805_6855_6905_6825_32phs6825_6605_chassis_tpm20.7ela_sm.pdf/download.html">TPM20.7ELA</a></li>
         </ul>
         </p>
 
@@ -79,8 +85,6 @@
           <li class="list-group-item"><a href="https://www.youtube.com/watch?v=YLxGs3oW4yM">replacement install video + adjustments</a></li>
 
           <li class="list-group-item"><a href="https://www.eeeguide.com/quasi-complementary-output-stage">difference btwn full and quasi complementary output - TBD</a></li>
-
-
         </ul>
         </p>
 
@@ -95,24 +99,34 @@
           <li class="list-group-item"><a href="https://www.mouser.kr/datasheet/2/308/1/BD135_D-2310428.pdf">BD139 and BD140 outputs drivers</a></li>
 
           <li class="list-group-item"><a href="https://www.mouser.kr/datasheet/2/389/tip35c-1852460.pdf">MJH6284 darlington outputs <- TBD, why B-E resistor ?</a></li>
-
         </ul>
         </p>
 
-
         <p>
-        <ul class="list-group collapse" id="collapse-ampT">
+        <ul class="list-group">
           <li class="list-group-item"><a href="https://www.mouser.com/pdfdocs/MethodsandProblemsmeasuringESR.pdf"></a>capacitor ESR measurement</li>
         </ul>
         </p>
 
         <p>
-        <a class="btn" data-bs-toggle="collapse" href="#collapse-ampT" aria-expanded="false" aria-controls="collapse-ampT">Samsung power supplies</a>
-        <ul class="list-group collapse" id="collapse-ampT">
-          <li class="list-group-item"><a href=""></a></li>
+        <a class="btn" data-bs-toggle="collapse" href="#collapse-psu" aria-expanded="false" aria-controls="collapse-psu">SAMUS caffe machine power supply</a>
+        <ul class="list-group collapse" id="collapse-psu">
+          <li class="list-group-item"><a href="https://www.elektroda.pl/rtvforum/topic4153323.html">lc-cm6862-p - PCB</a></li>
+          <li class="list-group-item"><a href="https://www.xinmisemi.com/product/kp3210b-2">KP3210B - PMIC PWM</a></li>
+          <li class="list-group-item"><a href="https://www.cafessole.com/recambios-cecotec/1746-pcb-cecotec-power-expresso-20-matic.html">cm6862 power board</a></li>
+          <li class="list-group-item"><a href="https://ineedparts.eu/products/power-board-lc-cm6862-p-cecotec-power-espresso-20-matic">cm6862 power board - vendor 2</a></li>
         </ul>
         </p>
+      </div>
 
+      <div class="container py-4 text-center">
+        <img src="img/resistor-color-code.jpg" class="rounded img-fluid" alt="Resistors color code">
+      </div>
+      <div class="container py-4 text-center">
+        <img src="img/smd-digits-code.jpg" class="rounded img-fluid" alt="Resistors SMD code">
+      </div>
+      <div class="container py-4 text-center">
+        <img src="img/inductor-color-code.jpg" class="rounded img-fluid" alt="Inductors color code">
       </div>
     </main>
 
