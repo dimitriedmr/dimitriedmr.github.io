@@ -1,73 +1,69 @@
 <!doctype html>
 <html lang="en" data-bs-theme="dark">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content=".">
-    <meta name="author" content="Dimitrie Panainte">
-    
-    <title>Things to avoid</title>
-    
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/extra-style.css" rel="stylesheet" />
-            
-  </head>
 
-  <body>
-    <div id="nav-placeholder">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content=".">
+  <meta name="author" content="Dimitrie Panainte">
+
+  <title>Things to avoid</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/extra-style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <div id="nav-placeholder">
+  </div>
+
+  <main>
+    <div class="container py-4">
+      <h6>Things TO !AVOID!:</h6>
+      <p>PCB with classic headers for data signals (signal integrity issues).</p>
+      <p>PCB with connectors having data signals near to power pins (with a voltage outside of logic level high/low range). A good example: Arduino UNO R3 headers power and data are separated.</p>
+      <p>GPIOs, because now we don't know which pin does what. If repairs are needed, usually schematics are not available and thus repair is hard.</p><!---TBD: add link to a consultancy firm (argument is based on it).-->
+      <p>Arduino IDE, due to inaccessibility of libraries. Better: VS Code</p>
+      <p>TVs that don't have a detachable power cord.</p>
+      <p>TVs that are bottom edge lit, including some Samsung models</p>
+      <p>TVs that main board contains timing board or power supply (Chinese models like TLC, Hisense)</p>
+      <p>TVs that timing board is merged into source board</p>
+      <p>TVs having an internal power source</p>
+      <p>Equipment having multiple functionalities in one package, e.g. smart TVs.</p>
+      <p>XLR (mic connector) on a battery related product.</p>
+      <p>DC-DC IC with multiple outputs.</p>
+      <p>Raspberry pi. Advantage: power efficiency. Disadvantage: not repairable.</p>
+      <p>GNU related SW, GPL license. Good: BSL, Apache, MIT</p>
+      <p>Ads, commercials: a form of forced waste of time.</p>
+      <p>Products of huge global companies, e.g. S&P500, because of profit prioritization.</p>
+      <a href="https://www.youtube.com/@SpearItAnimal/videos">SpearItAnimal - Catamaran Lagoon 450s fiberglass repairs and interior remodeling</a> alcohol promotion and inappropriate jokes on a public platform<br/>
+      <a href="https://fmhy.net/beginners-guide">Free stuff</a>
+      <p>for loops, instead use while.</p>
+      <p>amplifiers having power transistors packaged together</p>
+      <a href="https://elektrotanya.com/akai_am-u03_sm.pdf/download.html">AKAI STK amp service manual</a><br/>
+      <a href="https://en.wikipedia.org/wiki/Darlington_transistor">Darlington pair</a><br/>
+      <a href="https://www.alldatasheet.com/datasheet-pdf/pdf/90357/ETC/STK0040II.html">original STK0040II dimensions</a><br/>
+      <a href="https://www.alldatasheet.com/datasheet-pdf/pdf/89361/ETC/STK0040II.html">STK family</a><br/>
+      <a href="https://www.teklib.com/library/sanyo-stk0040ii-amplifier-datasheet/">STK family complete document</a><br/>
+      <a href="https://www.diyaudio.com/community/threads/repairing-my-pioneer-sx-780-which-of-these-two-options-is-the-better-replacement-for-the-stk-0050.401017/">replacement options</a><br/>
+      <a href="https://pyramid-audio.com/modules?id=STK0050">STK0050 replacement PYRAMID</a><br/>
+      <a href="https://www.pyramid-audio.com/modules">replacements PYRAMID</a><br/>
+      <a href="https://www.semicon.sanken-ele.co.jp/sk_content/std03n_ds_en.pdf">std03n output Darlington</a><br/>
+      <a href="https://www.semicon.sanken-ele.co.jp/sk_content/std03p_ds_en.pdf">std03p output Darlington</a><br/>
+      <a href="https://pyramid-audio.com/img/modules/STK0050/0050A.JPG">module replacement image</a><br/>
+      <a href="https://www.pyramid-audio.com/img/modules/STK8040/8040A.jpg">another module replacement</a><br/>
+      <a href="https://www.olegvintageaudio.com/2022/03/upgrading-stk-0050-modules-in-pioneer.html">STK0050 replacement with transistors</a><br/>
+      <a href="https://www.onsemi.com/pdf/datasheet/mje15032-d.pdf">power transistors output driver</a><br/>
+      <a href="https://www.onsemi.com/pdf/datasheet/njw3281-d.pdf">power transistors output</a><br/>
+      <a href="https://www.youtube.com/watch?v=YLxGs3oW4yM">replacement install video + adjustments</a><br/>
+      <a href="https://www.eeeguide.com/quasi-complementary-output-stage">difference between full and quasi complementary output - TBD</a><br/>
     </div>
+  </main>
+  <div id="footer-placeholder">
+  </div>
+  <script src="js/external-parts-loader.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
 
-    <main>
-      <div class="container py-4">
-        <h4>Things to avoid</h4>
-        <ul class="list-group">
-          <li class="list-group-item">PCB with headers (signal integrity issues). Different power domains: power pins (a voltage higher than logic power) next to data pins. A good example: Arduino UNO R3 has separate headers for power and data.</li>
-          <li class="list-group-item">GPIOs, not knowing which pin does what. If repairs are needed, usually schematics are not available and thus repair is hard. TBD: link to a consultancy firm.</li>
-          <li class="list-group-item">Arduino IDE, due to inaccessibility of libraries. Better: vs code</li>
-          <li class="list-group-item">TVs that: don't have a detachable power cord; are bottom edge lit; timing board is merged into main or source board; power source is internal; smart TVs (is an equipment that has multiple functionalities in one package).</li>
-          <li class="list-group-item">XLR (mic connector) on a battery related product.</li>
-          <li class="list-group-item">DC-DC IC with multiple outputs.</li>
-          <li class="list-group-item">Raspberry pi. Advantage: power efficiency. Disadvantage: not repairable.</li>
-          <li class="list-group-item">GNU related SW, GPL license. Good: BSL, Apache, MIT</li>
-          <li class="list-group-item">Ads, commercials: a form of forced waste of time.</li>
-          <li class="list-group-item">Products of huge global companies, e.g. S&P500, because of profit prioritization.</li>
-          <li class="list-group-item"><a href="https://www.youtube.com/@SpearItAnimal/videos">SpearItAnimal - Catamaran Lagoon 450s fiberglass repairs and interior remodeling, alcohol promotion and inappropriate jokes on a public platform.</a></li>
-          <li class="list-group-item"><a href="https://fmhy.net/beginners-guide">Free stuff</a></li>
-          <li class="list-group-item">Never use for statements, instead use while loop.</li>
-        </ul>
-        amplifiers having power transistors packaged together
-        <a class="btn" data-bs-toggle="collapse" href="#collapse-akai" aria-expanded="false" aria-controls="collapse-akai">AKAI</a> 
-        <ul class="list-group collapse" id="collapse-akai">
-          <li class="list-group-item"><a href="https://elektrotanya.com/akai_am-u03_sm.pdf/download.html">AKAI STK amp service manual</a></li>
-          <li class="list-group-item"><a href="https://en.wikipedia.org/wiki/Darlington_transistor">Darlington pair</a></li>
-          <li class="list-group-item"><a href="https://www.alldatasheet.com/datasheet-pdf/pdf/90357/ETC/STK0040II.html">original STK0040II dimensions</a></li>
-          <li class="list-group-item"><a href="https://www.alldatasheet.com/datasheet-pdf/pdf/89361/ETC/STK0040II.html">STK family</a></li>
-          <li class="list-group-item"><a href="https://www.teklib.com/library/sanyo-stk0040ii-amplifier-datasheet/">STK family complete document</a></li>
-
-          <li class="list-group-item"><a href="https://www.diyaudio.com/community/threads/repairing-my-pioneer-sx-780-which-of-these-two-options-is-the-better-replacement-for-the-stk-0050.401017/">replacement options</a></li>
-          <li class="list-group-item"><a href="https://pyramid-audio.com/modules?id=STK0050">STK0050 replacement PYRAMID</a></li>
-          <li class="list-group-item"><a href="https://www.pyramid-audio.com/modules">replacements PYRAMID</a></li>
-          <li class="list-group-item"><a href="https://www.semicon.sanken-ele.co.jp/sk_content/std03n_ds_en.pdf">std03n output Darlington</a></li>
-          <li class="list-group-item"><a href="https://www.semicon.sanken-ele.co.jp/sk_content/std03p_ds_en.pdf">std03p output Darlington</a></li>
-          <li class="list-group-item"><a href="https://pyramid-audio.com/img/modules/STK0050/0050A.JPG">module replacement image</a></li>
-          <li class="list-group-item"><a href="https://www.pyramid-audio.com/img/modules/STK8040/8040A.jpg">another module replacement</a></li>
-
-          <li class="list-group-item"><a href="https://www.olegvintageaudio.com/2022/03/upgrading-stk-0050-modules-in-pioneer.html">STK0050 replacement with transistors</a></li>
-          <li class="list-group-item"><a href="https://www.onsemi.com/pdf/datasheet/mje15032-d.pdf">power transistors output driver</a></li>
-          <li class="list-group-item"><a href="https://www.onsemi.com/pdf/datasheet/njw3281-d.pdf">power transistors output</a></li>
-
-          <li class="list-group-item"><a href="https://www.youtube.com/watch?v=YLxGs3oW4yM">replacement install video + adjustments</a></li>
-
-          <li class="list-group-item"><a href="https://www.eeeguide.com/quasi-complementary-output-stage">difference between full and quasi complementary output - TBD</a></li>
-        </ul>
-    </div>
-    </main>
-
-    <div id="footer-placeholder">
-    </div>
-
-    <script src="js/external-parts-loader.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-
-  </body>
 </html>
