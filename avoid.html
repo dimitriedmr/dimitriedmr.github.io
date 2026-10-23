@@ -21,19 +21,25 @@
   <main>
     <div class="container py-4">
       <h6>Things TO !AVOID!:</h6>
-      <p>PCB with classic headers for data signals (signal integrity issues).</p>
-      <p>PCB with connectors having data signals near to power pins (with a voltage outside of logic level high/low range). A good example: Arduino UNO R3 headers power and data are separated.</p>
+      <p>PCB with classic headers for data signals (signal integrity issues). Example: apple solders memory onto main board.</p>
+      <p>PCB with connectors having data signals near to power pins (with a voltage outside of logic level range). A good example: Arduino UNO R3 headers power and data are separated.</p>
       <p>GPIOs, because now we don't know which pin does what. If repairs are needed, usually schematics are not available and thus repair is hard.</p><!---TBD: add link to a consultancy firm (argument is based on it).-->
-      <p>Arduino IDE, due to inaccessibility of libraries. Better: VS Code</p>
-      <p>TVs that don't have a detachable power cord.</p>
-      <p>TVs that are bottom edge lit, including some Samsung models</p>
+      <p>Arduino IDE, due to inaccessibility of libraries. Better: VS Code IntelliSense can open included headers in an instant</p>
+      <p>TVs that don't have a detachable power cord. (mostly Chinese). Good: Samsung, Philips, LGs...</p>
+      <p>TVs that are bottom edge lit, including some Samsung models. Due to gravity, prism is pressing on LEDs and they're getting hot.</p>
       <p>TVs that main board contains timing board or power supply (Chinese models like TLC, Hisense)</p>
-      <p>TVs that timing board is merged into source board</p>
-      <p>TVs having an internal power source</p>
-      <p>Equipment having multiple functionalities in one package, e.g. smart TVs.</p>
-      <p>XLR (mic connector) on a battery related product.</p>
-      <p>DC-DC IC with multiple outputs.</p>
-      <p>Raspberry pi. Advantage: power efficiency. Disadvantage: not repairable.</p>
+      <p>TVs that timing board is merged into source board.</p>
+      <p>TVs having power supply inside.</p>
+      <p>Do not keep appliances powered 24/7 because its power supply standby lanes will have issues over time.</p>
+      <p>Some smart TVs do updates while in standby; avoid smart TVs.</pp>
+      <p>Equipment having multiple functionalities in one package; avoid smart TVs.</p>
+      <p>XLR (mic connector) used as power connector on a battery related product.</p>
+      <p>DC-DC IC with multiple outputs. When it brakes, it's hard to fix back.</p>
+      <p>Avoid I2C, I3C or other address based protocols. If an IC bakes, an replacement after 10+ yrs will have another address.</p>
+      <p>Raspberry pi. Advantage: power efficiency. Disadvantage: definitely not repairable.</p>
+      <p>Avoid mass-produced EVs, due to bad and harmful industries practices focused sole on profit margin.</p>
+      <p>Avoid petrol based cars. Love BEVs, but not in the way they are actually made.</p>
+      <p>Avoid Tesla EV due to door handles issues, motor coolant leaks, glued batteries, different port for diagnostics.</p>
       <p>GNU related SW, GPL license. Good: BSL, Apache, MIT</p>
       <p>Ads, commercials: a form of forced waste of time.</p>
       <p>Products of huge global companies, e.g. S&P500, because of profit prioritization.</p>
