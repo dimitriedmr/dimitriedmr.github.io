@@ -20,7 +20,7 @@
 
   <main>
     <div class="container py-4">
-      <h6>Things TO !AVOID!:</h6>
+      <h4>Things to !AVOID!:</h4>
       <p>PCB with classic headers for data signals (signal integrity issues). Example: apple solders memory onto main board.</p>
       <p>PCB with connectors having data signals near to power pins (with a voltage outside of logic level range). A good example: Arduino UNO R3 headers power and data are separated.</p>
       <p>GPIOs, because now we don't know which pin does what. If repairs are needed, usually schematics are not available and thus repair is hard.</p><!---TBD: add link to a consultancy firm (argument is based on it).-->
@@ -30,6 +30,9 @@
       <p>TVs that main board contains timing board or power supply (Chinese models like TLC, Hisense)</p>
       <p>TVs that timing board is merged into source board.</p>
       <p>TVs having power supply inside.</p>
+      <p>TVs with a thin or glued display panel or glued backlight led strips. 
+      <a class="link-info" href="https://www.youtube.com/watch?v=Cmnfwabz0bA">Hisense measures glue quantity by AI.</a>
+      If you use AI on a bad practice, it doesn't make it better.</p>
       <p>Do not keep appliances powered 24/7 because its power supply standby lanes will have issues over time.</p>
       <p>Some smart TVs do updates while in standby; avoid smart TVs.</pp>
       <p>Equipment having multiple functionalities in one package; avoid smart TVs.</p>
