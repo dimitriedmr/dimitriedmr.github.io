@@ -11,21 +11,21 @@
 
   <link href="css/bootstrap.min.css" rel="stylesheet" />
   <link href="css/extra-style.css" rel="stylesheet" />
-
 </head>
 
 <body>
   <div id="nav-placeholder">
   </div>
+
   <main>
     <div class="container py-4">
 
       <img src="img/pcbruler.jpg" class="rounded img-fluid" alt="Mouser SMD ruler" /><br />
 
-      <h4>TV repairs - SW:</h4>
+      <h4>TV repairs - mainboard, SW, FW:</h4>
 
       <a class="" href="https://github.com/bigbigmdm/IMSProg">IMSProg - 25C(SPI) and 24C(I2C) flash programmer</a><br />
-      <a class="" href="https://www.youtube.com/watch?v=6ofPbclXuZQ">EMMC - 1 wire data mode</a><br />
+      <a class="" href="https://www.youtube.com/watch?v=6ofPbclXuZQ">yt EMMC - 1 wire data mode</a><br />
       <a class="link-info" href="https://www.kazmielecom.tech/">firmwares</a><br />
       <a class="" href="https://vortex-tv.blogspot.com">Vortex firmware dumps</a><br />
       <a class="" href="https://firmware-tv.blogspot.com">TV firmware dumps</a><br />
@@ -36,22 +36,37 @@
       <a class="" href="https://github.com/bbbradsmith/binxelview">Binxelview binary image explorer</a><br />
       <a class="" href="https://github.com/NationalSecurityAgency/ghidra">SRE</a><br />
       <a class="link-info" href="https://web.archive.org/web/20260130053844/https://toengel.net/philipsblog/firmware-download/">Philips firmware dumps and chassis</a><br />
+      <p> Chinese universal boards<br />
+      Common failures: dead 1V1 core converter (MP1658) (VCC_CPU IC burned), blown back-light MOSFET, corrupted SPI-NOR firmware (GD25Q64)<br />
+      <a class="" href="https://www.elektroda.com/rtvforum/topic4171533.html">4k: CV9602-B55 - MT9602/Amlogic T972</a><br />
+      <a class="link-warning" href="https://www.elektroda.com/qa,msd3663-tv-board-pcb-design-resources.html">HD: MStar/Mediatek MSD3663</a>
+      TP.MS3663T.PB751/PB818/PB819, Z.VST.3663-A, CH.MSD3663.EC-series, JUG7.820.00xxxxx ...
+      and <a class="link-secondary" href="https://www.kazmielecom.tech/tp-ms3663s-pb818-firmware/">ms3663 fw</a><br />
+      <a class="" href="https://www.scribd.com/document/538665254/TP-MS3663T-PB751-Schematic-Diagram-Download">ms3663 PB751 schematics</a><br />
+      <a class="" href="https://monitor.espec.ws/files/tp.ms3663s.pb818_174.pdf">ms3663 pb818 schematics</a><br />
+      Backlight: NCP1251 flyback + PF7911B boost LED driver, BL-ON tied to GPIO15 (VBL_CTRL).<br />
+      <a class="link-secondary" href="https://www.elektroda.com/qa,dm3663-lua816-mstar-msd3663-details.html">Firmware</a> flashing procedure: Rename to “msd3663.bin” (older expect “MstarUpgrade.bin”), power-up while holding keypad “VOL+”, Status LED flashes, after auto-reboot remove USB.
+      <br />
+
+      </p>
+      <a class="" href="https://www.bilibili.com/en/video/BV1G8411N74f">bili V-by-one</a><br />
       
+
       <h4>TV repairs - panel, t-con, backlight:</h4>
 
-      <a class="link-info" href="https://www.youtube.com/watch?v=iHnuXDXsdzE">costelsimionescu3752 - tv panel repairs - backlight replacement</a><br />
+      <a class="link-info" href="https://www.youtube.com/watch?v=iHnuXDXsdzE">yt costelsimionescu3752 - tv panel repairs - backlight replacement</a><br />
 
-      <a class="link-secondary" href="https://www.youtube.com/watch?v=lhLga3djdno">Ornate Pixels - LCD explanation</a><br />
-      <a class="link-secondary" href="https://www.youtube.com/watch?v=izd7dhtmZjc">e-learning électronique - TCON board CPV CKV CKVB STV STVP OE XAO RL UD VGH VGL</a><br />  
+      <a class="link-secondary" href="https://www.youtube.com/watch?v=lhLga3djdno">yt Ornate Pixels - LCD explanation</a><br />
+      <a class="link-secondary" href="https://www.youtube.com/watch?v=izd7dhtmZjc">yt e-learning électronique - TCON board CPV CKV CKVB STV STVP OE XAO RL UD VGH VGL</a><br />  
 
-      <a class="" href="https://www.youtube.com/@VcoreLC">VcoreLC - LCD TV repairs</a><br />
-      <a class="" href="https://www.youtube.com/watch?v=TrKGv397_Tw">Ornate Pixels - EVEN, ODD, CKV, VCOM, TFT, LCD, VON Explanation</a><br />
+      <a class="" href="https://www.youtube.com/@VcoreLC">yt VcoreLC - LCD TV repairs</a><br />
+      <a class="" href="https://www.youtube.com/watch?v=TrKGv397_Tw">yt Ornate Pixels - EVEN, ODD, CKV, VCOM, TFT, LCD, VON Explanation</a><br />
       
       <a class="" href="https://www.ornatepixels.com/2024/02/sm4186-ic-schematic-circuit-diagram-pinout.html">Ornate Pixels - T-CON SM4186 PMIC Schematic</a><br />
       <a class="" href="https://www.ornatepixels.com/2022/07/sm4186-ic-pinout-diagram-ckv-info.html">Ornate Pixels - T-CON SM4186 PMIC CKV info </a><br />
       <a class="" href="https://www.scribd.com/document/680812649/Schematic-SM4186">scribd SM4186 - T-CON PMIC </a><br />
 
-      <a class="" href="https://www.youtube.com/watch?v=d9Lj1GMuAPA">V.StereoMusic Electronic Service - how to Replace LED Strips in Samsung 4k - edge LED and curved UE55NU7300</a><br />
+      <a class="" href="https://www.youtube.com/watch?v=d9Lj1GMuAPA">yt V.StereoMusic Electronic Service - how to Replace LED Strips in Samsung 4k - edge LED and curved UE55NU7300</a><br />
 
       <h4>TV repairs - general, other:</h4>
 
@@ -66,8 +81,8 @@
 
       <h4>espresso repairs</h4>
 
-      <a class="" href="https://www.youtube.com/watch?v=zalztAb6zwk">Adrian - espresso caffee repairs</a><br />
-      <a class="" href="https://www.youtube.com/watch?v=Tgrg2bxJYnM">OnlineHelpNoProblem - espresso caffee repairs</a><br />
+      <a class="" href="https://www.youtube.com/watch?v=zalztAb6zwk">yt Adrian - espresso caffee repairs</a><br />
+      <a class="" href="https://www.youtube.com/watch?v=Tgrg2bxJYnM">yt OnlineHelpNoProblem - espresso caffee repairs</a><br />
       <a class="" href="https://www.elektroda.pl/rtvforum/topic4153323.html">lc-cm6862-p - PCB</a><br />
       <a class="" href="https://www.xinmisemi.com/product/kp3210b-2">KP3210B - PMIC PWM</a><br />
       <a class="" href="https://www.cafessole.com/recambios-cecotec/1746-pcb-cecotec-power-expresso-20-matic.html">cm6862 power board</a><br />
@@ -76,21 +91,21 @@
       <h4>apple repairs</h4>
 
       <a class="" href="https://docs.google.com/presentation/d/1PkeO_lC5WTPScSV3ZzEEjVuDWeQtL2eHK6jEcf7axA0">Louis Rossmann - Repair Training Guide</a><br />
-      <a class="" href="https://www.youtube.com/watch?v=N7P0kPSRwbE">rossmanngroup - Louis Rossmann - macbook component level repair, repair.wiki</a><br />
-      <a class="" href="https://www.youtube.com/watch?v=7JamI7aDLOE">JessaJones - Apple iphone NFC issues</a><br />
-      <a class="" href="https://www.youtube.com/@iFixitYourself">iFixitYourself</a><br />
+      <a class="" href="https://www.youtube.com/watch?v=N7P0kPSRwbE">yt rossmanngroup - Louis Rossmann - macbook component level repair, repair.wiki</a><br />
+      <a class="" href="https://www.youtube.com/watch?v=7JamI7aDLOE">yt JessaJones - Apple iphone NFC issues</a><br />
+      <a class="" href="https://www.youtube.com/@iFixitYourself">yt iFixitYourself</a><br />
 
       <h4>appliance repairs</h4>
 
       <img src="img/smd-digits-code.jpg" class="rounded img-fluid" alt="Resistors SMD code" /><br />
 
-      <a class="link-info" href="https://www.youtube.com/watch?v=s5nsThTHaTA">How-2-repair - Washing machines related repairs</a><br />
-      <a class="" href="https://www.youtube.com/watch?v=Q1S-PVo3GlA">Miele D-bus washing machine</a><br />
-      <a class="" href="https://www.youtube.com/watch?v=jHP942Livy0">Technology Connections dishwasher tips and tricks</a><br />
-      <a class="" href="https://www.youtube.com/watch?v=_MsXgleapKc">HVAC Chris - AC repairs</a><br />
-      <a class="" href="https://www.youtube.com/watch?v=s-41UF02vrU">Tech Ingredients - AC mods</a><br />
-      <a class="" href="https://www.youtube.com/watch?v=xH8LnK9hh4w">Colin O'Flynn - Mic Disable Circuit Reverse Engineering</a><br />
-      <a class="" href="https://www.youtube.com/@LearnElectronicsRepair">LearnElectronicsRepair - amps</a><br />
+      <a class="link-info" href="https://www.youtube.com/watch?v=s5nsThTHaTA">yt How-2-repair - Washing machines related repairs</a><br />
+      <a class="" href="https://www.youtube.com/watch?v=Q1S-PVo3GlA">yt Miele D-bus washing machine</a><br />
+      <a class="" href="https://www.youtube.com/watch?v=jHP942Livy0">yt Technology Connections dishwasher tips and tricks</a><br />
+      <a class="" href="https://www.youtube.com/watch?v=_MsXgleapKc">yt HVAC Chris - AC repairs</a><br />
+      <a class="" href="https://www.youtube.com/watch?v=s-41UF02vrU">yt Tech Ingredients - AC mods</a><br />
+      <a class="" href="https://www.youtube.com/watch?v=xH8LnK9hh4w">yt Colin O'Flynn - Mic Disable Circuit Reverse Engineering</a><br />
+      <a class="" href="https://www.youtube.com/@LearnElectronicsRepair">yt LearnElectronicsRepair - amps</a><br />
       <a class="" href="https://www.ti.com/product/TAS2770/part-details/TAS5770LC0YFFR">TAS5770LC0 - Mono Class-D Amplifier</a><br />
       <a class="link-secondary" href="https://toshiba.semicon-storage.com/info/2SC5200_datasheet_en_20160107.pdf?did=20668&prodName=2SC5200">C5200 NPN output</a><br />
       <a class="link-secondary" href="https://toshiba.semicon-storage.com/info/2SA1943_datasheet_en_20160107.pdf?did=20427&prodName=2SA1943">A1943 PNP output</a><br />
@@ -155,26 +170,34 @@
       Things I don't like:
       Radio cannot function normally and it's stuck in an error state. WHY?
       <br />
-      <a class="link-secondary" href="https://www.youtube.com/@gtacarkits">gtacarkits</a><br />
+      <a class="link-secondary" href="https://www.youtube.com/@gtacarkits">yt gtacarkits</a><br />
 
       <a class="" href="">Pioneer car infotainment</a>
       <a class="link-secondary" href="https://pioneer-car.eu/uk/avic-f860bt/avic-f860bt">avic-f860bt website firmware and check its instructions</a><br />
       <a class="link-secondary" href="https://www.pioneer.com.au/knowledge-hub/help-support/my-bluetooth-menu-is-greyed-out/">Bluetooth menu greyed out: disable safe mode menu option or connect parking brake, green wire</a><br />
       <a class="link-secondary" href="https://pioneer-car.eu/uk/nd-bc6/nd-bc6">universal rearview camera</a><br />
-      <a class="link-secondary" href="https://www.youtube.com/watch?v=APlYub4m5rM">wiring harness</a><br />
+      <a class="link-secondary" href="https://www.youtube.com/watch?v=APlYub4m5rM">yt wiring harness</a><br />
       <a class="link-secondary" href="https://elektrotanya.com/pioneer_avic-6100nex_5100nex_f970dab_f970bt_f970tv_crt5701_sm.pdf/download.html">service manual similar to 5000nex</a><br />
+
+      <a class="" href="https://www.youtube.com/watch?v=1dqFOWDadB8">yt Salvage Geek - android nav backlight repair</a><br />
 
       <br />
 
       <h4>Other</h4>
 
-      <a class="" href="https://www.youtube.com/watch?v=pu-IGfTi7Wk">CRD - cash registers history</a><br />
-      <a class="link-secondary" href="https://www.youtube.com/@dspiffy">Dan ''Spiffy'' Neuman - ceiling fans</a><br />
+      <a class="" href="https://www.youtube.com/watch?v=pu-IGfTi7Wk">yt CRD - cash registers history</a><br />
+      <a class="link-secondary" href="https://www.youtube.com/@dspiffy">yt Dan ''Spiffy'' Neuman - ceiling fans</a><br />
 
-      <a class="link-secondary" href="https://www.youtube.com/@ProjectFarm">ProjectFarm - products reviews and tests</a><br />
-      <a class="link-secondary" href="https://www.youtube.com/@ProjectFarmExtra">ProjectFarm 2</a><br />
+      <a class="link-secondary" href="https://www.youtube.com/@ProjectFarm">yt ProjectFarm - products reviews and tests</a><br />
+      <a class="link-secondary" href="https://www.youtube.com/@ProjectFarmExtra">yt ProjectFarm 2</a><br />
 
-      <a class="link-secondary" href="https://www.youtube.com/@adgteche3d">adgteche3d - repairs</a><br />
+      <a class="link-secondary" href="https://www.youtube.com/@adgteche3d">yt adgteche3d - repairs</a><br />
+
+      <h4>Repair Resources (schematics, power trees, connector pin-outs)</h4>
+      <a class="" href="https://elektrotanya.com">elektrotanya</a><br />
+      <a class="" href="https://archive.espec.ws/section1">espec</a><br />
+      <a class="" href="https://manualmachine.com/">manualmachine</a><br />
+      
 
     </div>
   </main>
